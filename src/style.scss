@@ -1,0 +1,46 @@
+body{
+    background-color: rgb(204, 241, 204);
+}
+
+.question-count{
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.question-text{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.score-section{
+   font-weight: bold;
+   font-size: 30px;
+}
+
+button{
+    margin-bottom: 20px;
+    border: none;
+    background: linear-gradient(180deg, rgb(84, 231, 84) 0%, rgb(77, 199, 168) 100%);
+    padding: 10px 0px;
+    border-radius: 10px;
+    width: 130px;
+    cursor: pointer;
+    font-weight: bold;
+    outline: none;
+    box-shadow: 5px 5px 8px rgb(189, 183, 183);
+}
+
+.app{
+    padding: 30px;
+    max-width: 300px;
+    background-color: white;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.answer-section{
+    display: grid;
+    justify-content: center;
+}
