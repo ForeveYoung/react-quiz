@@ -47,11 +47,13 @@ export default function App() {
 			setShowScore(true);
 		}
 	};
+
 	return (
 		<div className='app'>
 			{showScore ? (
 				<div className='score-section'>
 					You scored {score} out of {questions.length}
+					<button className='reload-btn' onClick={() => window.location.reload(false)}>Try again</button>
 				</div>
 			) : (
 				<>
@@ -63,7 +65,9 @@ export default function App() {
 					</div>
 					<div className='answer-section'>
 						{questions[currentQuestion].answer.map((answerOption) => (
-							<button onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}>{answerOption.answerText}</button>
+							<>
+								<button onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}>{answerOption.answerText}</button>
+							</>
 						))}
 					</div>
 				</>

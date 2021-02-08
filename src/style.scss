@@ -1,3 +1,15 @@
+@mixin btn-style {
+    border: none;
+    background: linear-gradient(180deg, rgb(84, 231, 84) 0%, rgb(77, 199, 168) 100%);
+    padding: 10px 0px;
+    border-radius: 10px;
+    width: 130px;
+    cursor: pointer;
+    font-weight: bold;
+    outline: none;
+    box-shadow: 5px 5px 8px rgb(189, 183, 183);
+}
+
 body{
     background-color: rgb(204, 241, 204);
 
@@ -12,9 +24,13 @@ body{
         .score-section{
             font-weight: bold;
             font-size: 30px;
+
+            .reload-btn{
+                @include btn-style();
+                margin-top: 20px;
+            }
         }
  
-    
         .question-count{
             margin-bottom: 10px;
             font-size: 25px;
@@ -31,16 +47,8 @@ body{
             justify-content: center;
 
             button{
-                margin-bottom: 20px;
-                border: none;
-                background: linear-gradient(180deg, rgb(84, 231, 84) 0%, rgb(77, 199, 168) 100%);
-                padding: 10px 0px;
-                border-radius: 10px;
-                width: 130px;
-                cursor: pointer;
-                font-weight: bold;
-                outline: none;
-                box-shadow: 5px 5px 8px rgb(189, 183, 183);
+                @include btn-style();
+                margin-bottom: 20px; 
             }
         }
     }
